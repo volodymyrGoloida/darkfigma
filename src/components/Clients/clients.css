@@ -1,0 +1,18 @@
+.content-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card img {
+    float: left;
+}
+.card h3,
+h6,
+p {
+    float: center;
+}
+
+@media (max-width: 1024px) {
+    .client-section {
+    }
+}

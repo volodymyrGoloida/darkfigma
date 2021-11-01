@@ -1,0 +1,32 @@
+.feature-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+.feature-article {
+    border-radius: 6px;
+    padding: 35px 20px 35px 20px;
+
+    margin-top: 20px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid white;
+}
+.feature-article img {
+    padding-top: 20px;
+    float: left;
+}
+.feature-article h1,
+p {
+    float: right;
+}
+@media (max-width: 1028px) {
+    .feature-article {
+        margin-left: 0px;
+    }
+    .feature-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

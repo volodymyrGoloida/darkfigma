@@ -1,0 +1,93 @@
+body {
+    margin: 0rem;
+    background-color: #252b42;
+}
+.Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #252b42;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: lighter;
+    position: fixed;
+}
+
+.navbar-items {
+    margin-right: 0.9rem;
+}
+.navbar-items a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.brand {
+    margin-right: 5rem;
+}
+.brand h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 32px;
+    margin: 2.3rem 0rem;
+}
+.login {
+    margin-left: 30rem;
+    display: flex;
+}
+.button {
+    /*height: 3.5rem;
+    width: 10rem;*/
+    border: none;
+    border-radius: 0.2rem;
+    margin-right: 0px;
+
+    width: 13rem;
+    height: 3.5rem;
+}
+.outline {
+    background-color: #252b42;
+    color: #23a6f0;
+}
+.inline {
+    background-color: #23a6f0;
+    color: white;
+}
+@media (max-width: 1028px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-items.brand {
+        padding-top: 0px;
+    }
+    .navbar-items.brand h3 {
+        margin-right: 10rem;
+    }
+    .navbar-items {
+        padding-top: 0.1rem;
+        padding-bottom: 1rem;
+    }
+    .login {
+        justify-content: end;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    .login img {
+        margin-right: 0.7rem;
+    }
+    .navbar-items a {
+        color: white;
+
+        font-size: 1.2rem;
+    }
+}
