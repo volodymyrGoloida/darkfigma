@@ -1,6 +1,6 @@
-import firstImg from './img/user.1.png'
-import secondImg from './img/user.2.png'
-export default {
+//import firstImg from './img/user.1.png'
+//import secondImg from './img/user.2.png'
+const obj = {
     navbar: ['Home', 'Product', 'Pricing', 'Contact'],
     featuresecton: [
         {
@@ -44,3 +44,5 @@ export default {
         },
     ],
 }
+
+export default obj

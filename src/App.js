@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-import obj from './config'
 import Header from './components/Header/Header'
 import Title from './components/Title/Title'
 import Feature from './components/Feature/Feature'

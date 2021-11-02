@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 .feature-article {
     border-radius: 6px;
@@ -11,16 +11,17 @@
     margin-top: 20px;
     margin: 20px;
     text-align: center;
+
     border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.feature-article img {
-    padding-top: 20px;
-    float: left;
+.featureInfo {
+    padding-left: 20px;
+    text-align: start;
 }
-.feature-article h1,
-p {
-    float: right;
-}
+
 @media (max-width: 1028px) {
     .feature-article {
         margin-left: 0px;

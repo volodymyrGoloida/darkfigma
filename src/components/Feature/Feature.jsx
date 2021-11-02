@@ -24,9 +24,13 @@ function Feature() {
                 {featuresecton.map((el) => {
                     return (
                         <div className="feature-article">
-                            <img src={featureimg} />
-                            <h5>{el.title}</h5>
-                            <p>{el.text}</p>
+                            <div className="featureImg">
+                                <img src={featureimg} alt="img" />
+                            </div>
+                            <div className="featureInfo">
+                                <h5>{el.title}</h5>
+                                <p>{el.text}</p>
+                            </div>
                         </div>
                     )
                 })}

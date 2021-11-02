@@ -2,7 +2,7 @@ import React from 'react'
 import './clients.css'
 import '../uiLibary/styles.css'
 import obj from '../../config'
-import firstImg from '../../img/user.1.png'
+
 function Clients() {
     const { disigners } = obj
     return (
@@ -16,13 +16,15 @@ function Clients() {
                 </p>
             </div>
             <div className="content-cards">
-                {disigners.map((client) => {
+                {disigners.map((client, index) => {
                     return (
-                        <div class="card">
-                            <img src={firstImg} />
-                            <h3>{client.title}</h3>
-                            <h6>{client.subtitle}</h6>
-                            <p>{client.text}</p>
+                        <div key={index} class="card">
+                            <div className="clientImg"></div>
+                            <div className="clientInfo">
+                                <h3>{client.title}</h3>
+                                <h6>{client.subtitle}</h6>
+                                <p>{client.text}</p>
+                            </div>
                         </div>
                     )
                 })}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './header.css'
 import obj from '../../config'
 import logo from '../../img/Vector.png'
@@ -24,10 +24,10 @@ function Header() {
                     <div className="navbar-items brand">
                         <h3>BrandName</h3>
                     </div>
-                    {navbar.map((el) => {
+                    {navbar.map((el, index) => {
                         return (
-                            <div className="navbar-items">
-                                <a href="">{el}</a>
+                            <div key={index} className="navbar-items">
+                                <a href="#2">{el}</a>
                             </div>
                         )
                     })}
@@ -35,9 +35,9 @@ function Header() {
                     <div className="login">
                         {width <= 1028 ? (
                             <>
-                                <img src={searchlogo} />{' '}
-                                <img src={basketlogo} />{' '}
-                                <img src={gamburlogo} />{' '}
+                                <img src={searchlogo} alt="дупа" />
+                                <img src={basketlogo} alt="дупа" />
+                                <img src={gamburlogo} alt="дупа" />
                             </>
                         ) : (
                             <>
@@ -46,7 +46,8 @@ function Header() {
                                 </button>
 
                                 <button className="button inline">
-                                    Become a member <img src={logo} />
+                                    Become a member{' '}
+                                    <img src={logo} alt="дупабоді" />
                                 </button>
                             </>
                         )}
