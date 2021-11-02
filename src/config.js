@@ -43,6 +43,16 @@ const obj = {
             //imgURL: secondImg,
         },
     ],
+    aboutInfo: [
+        {
+            title: 'the quick fox jumps over the lazy dog',
+            text: 'Things in a very small scale',
+        },
+        {
+            title: 'the quick fox jumps over the lazy dog',
+            text: 'Things in a very small scale',
+        },
+    ],
 }
 
 export default obj

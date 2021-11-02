@@ -1,0 +1,45 @@
+.aboutImg {
+    display: flex;
+    justify-content: center;
+    background-image: url('../../img/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 592px;
+    height: 400px;
+
+    align-items: center;
+}
+.aboutButton {
+    padding: 2.8px 36.8px;
+    width: 92.6px;
+    height: 92.6px;
+    border-radius: 73.6px;
+    border: none;
+    background-color: #23a6f0;
+}
+.aboutContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.aboutInfo {
+    width: 40%;
+    margin-left: 40px;
+    align-items: center;
+}
+@media (max-width: 1024px) {
+    .aboutImg {
+        height: 442px;
+        width: 30rem;
+        margin: 2rem 10rem 2rem;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+    }
+    .aboutContent {
+        flex-direction: column;
+    }
+    .aboutInfo {
+        margin: 0 auto;
+    }
+}
