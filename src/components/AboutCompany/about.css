@@ -24,9 +24,20 @@
 }
 .aboutInfo {
     width: 40%;
-    margin-left: 40px;
+    margin-left: 60px;
+    align-items: center;
+
+    padding: 0 auto;
+}
+.aboutMoreInfo {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
+.aboutMoreText {
+    margin-left: 3rem;
+}
+
 @media (max-width: 1024px) {
     .aboutImg {
         height: 442px;
@@ -40,6 +51,9 @@
         flex-direction: column;
     }
     .aboutInfo {
+        margin: 0 auto;
+    }
+    .aboutMoreText {
         margin: 0 auto;
     }
 }

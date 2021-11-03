@@ -1,0 +1,146 @@
+.pricingInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.priceBlock {
+    background-color: white;
+    height: 689px;
+    width: 327px;
+    margin: 3rem;
+    border-radius: 10px;
+    padding: 50px, 40px, 50px, 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+
+/*prices */
+
+.pricesTextSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.priceContainerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.priceTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #252b42;
+    margin: 0;
+}
+.priceSubTitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #737373;
+    margin-top: 1rem;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.priceNumb {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+
+    color: #23a6f0;
+    margin: 0;
+}
+
+.priceConditions {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8ec2f2;
+}
+.pricingButton {
+    height: 52px;
+    width: 246px;
+
+    border-radius: 5px;
+    padding: 15px, 40px, 15px, 40px;
+    border: none;
+    background-color: #23a6f0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: white;
+}
+
+/* possibility section */
+.possibilities {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    border-radius: 200px;
+    margin: 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+.able {
+    background: #2dc071;
+}
+.disable {
+    background: #bdbdbd;
+}
+
+.possibilityText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+    letter-spacing: 0.2px;
+
+    color: #252b42;
+    overflow: auto;
+}
+.possibilityBlock {
+    height: 4rem;
+    margin: 0 auto;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .pricingInfo {
+        flex-direction: column;
+    }
+    .price {
+        flex-direction: row;
+        align-items: center;
+    }
+    .priceNumb {
+        margin-bottom: 40px;
+    }
+}

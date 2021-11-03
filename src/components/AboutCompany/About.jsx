@@ -2,7 +2,12 @@ import React from 'react'
 import './about.css'
 import '../uiLibary/styles.css'
 import playbutton from '../../img/playbutton.png'
+import obj from '../../config'
+import aboutImg1 from '../../img/aboutSectionimg1.png'
+import aboutImg2 from '../../img/aboutSectionimg2.png'
 function About() {
+    const { aboutInfo } = obj
+    console.log(aboutInfo)
     return (
         <div className="section">
             <div className="section-header">
@@ -26,6 +31,24 @@ function About() {
                         elit. Eligendi in sed veritatis dolore ab ad quos, earum
                         fugiat amet blanditiis autem omnis possimus{' '}
                     </p>
+                    {aboutInfo.map((el, index) => {
+                        return (
+                            <div className="aboutMoreInfo">
+                                <div className="aboutMoreImg">
+                                    <img
+                                        src={
+                                            index === 0 ? aboutImg1 : aboutImg2
+                                        }
+                                        alt="imgabout"
+                                    />
+                                </div>
+                                <div className="aboutMoreText">
+                                    <h5>{el.title}</h5>
+                                    <h6>{el.text}</h6>
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </div>

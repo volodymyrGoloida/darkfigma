@@ -6,7 +6,9 @@
 .card {
     width: 30%;
     display: flex;
+
     flex-direction: row;
+    margin: 3rem;
 }
 
 .clientImg {
@@ -26,6 +28,14 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+}
+.stars {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.clientInfo {
+    margin: 1rem 1rem 1rem 2rem;
 }
 
 @media (max-width: 1024px) {
