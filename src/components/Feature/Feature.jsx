@@ -21,9 +21,9 @@ function Feature() {
                 </p>
             </div>
             <div className="feature-content">
-                {featuresecton.map((el) => {
+                {featuresecton.map((el, index) => {
                     return (
-                        <div className="feature-article">
+                        <div key={index} className="feature-article">
                             <div className="featureImg">
                                 <img src={featureimg} alt="img" />
                             </div>

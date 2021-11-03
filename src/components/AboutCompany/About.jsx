@@ -33,7 +33,7 @@ function About() {
                     </p>
                     {aboutInfo.map((el, index) => {
                         return (
-                            <div className="aboutMoreInfo">
+                            <div key={index} className="aboutMoreInfo">
                                 <div className="aboutMoreImg">
                                     <img
                                         src={

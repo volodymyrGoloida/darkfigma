@@ -29,8 +29,14 @@ function Clients() {
                                 <h3>{client.title}</h3>
                                 <h6>{client.subtitle}</h6>
                                 <div className="stars">
-                                    {stars.map((star) => {
-                                        return <img src={star} alt="star" />
+                                    {stars.map((star, indx) => {
+                                        return (
+                                            <img
+                                                key={indx}
+                                                src={star}
+                                                alt="star"
+                                            />
+                                        )
                                     })}
                                 </div>
                                 <p>{client.text}</p>

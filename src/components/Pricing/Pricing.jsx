@@ -16,55 +16,64 @@ function Pricing() {
                 </p>
             </div>
             <div className="pricingInfo">
-                {pricing.map(({ title, subtitle, price, possibilities }) => {
-                    return (
-                        <div className="priceBlock">
-                            <div className="pricesTextSection">
-                                <div className="priceContainerTitles">
-                                    <h3 className="priceTitle">{title} </h3>
-                                    <h5 className="priceSubTitle">
-                                        {subtitle}
-                                    </h5>
-                                </div>
-                                <div className="price">
-                                    <h2 className="priceNumb">{price}$</h2>
-                                    <h5 className="priceConditions">
-                                        Per Month
-                                    </h5>
-                                </div>
+                {pricing.map(
+                    ({ title, subtitle, price, possibilities }, index) => {
+                        return (
+                            <div key={index} className="priceBlock">
+                                <div className="pricesTextSection">
+                                    <div className="priceContainerTitles">
+                                        <h3 className="priceTitle">{title} </h3>
+                                        <h5 className="priceSubTitle">
+                                            {subtitle}
+                                        </h5>
+                                    </div>
+                                    <div className="price">
+                                        <h2 className="priceNumb">{price}$</h2>
+                                        <h5 className="priceConditions">
+                                            Per Month
+                                        </h5>
+                                    </div>
 
-                                <button className="pricingButton">
-                                    Try for free
-                                </button>
-                            </div>
-                            <div className="possibilities">
-                                {possibilities.map(
-                                    ({ possibilityText, className }) => {
-                                        return (
-                                            <div className="possibilityBlock">
+                                    <button className="pricingButton">
+                                        Try for free
+                                    </button>
+                                </div>
+                                <div className="possibilities">
+                                    {possibilities.map(
+                                        (
+                                            { possibilityText, className },
+                                            indx
+                                        ) => {
+                                            return (
                                                 <div
-                                                    className={
-                                                        'circle ' + className
-                                                    }
+                                                    key={indx}
+                                                    className="possibilityBlock"
                                                 >
-                                                    <img
-                                                        src={arrowDoneImg}
-                                                        alt="asdsa"
-                                                    />
+                                                    <div
+                                                        className={
+                                                            'circle ' +
+                                                            className
+                                                        }
+                                                    >
+                                                        <img
+                                                            src={arrowDoneImg}
+                                                            alt="img"
+                                                        />
+                                                    </div>
+                                                    <div>
+                                                        <h6 className="possibilityText">
+                                                            {possibilityText}
+                                                        </h6>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <h6 className="possibilityText">
-                                                        {possibilityText}
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                        )
-                                    }
-                                )}
+                                            )
+                                        }
+                                    )}
+                                </div>
                             </div>
-                        </div>
-                    )
-                })}
+                        )
+                    }
+                )}
             </div>
         </div>
     )

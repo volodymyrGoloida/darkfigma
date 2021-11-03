@@ -1,0 +1,66 @@
+.touchInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.touchInfoBlock {
+    height: 343px;
+    width: 328px;
+
+    padding: 50px, 40px, 50px, 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.touchInfoBlock h5,
+h6 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+.touchInfoBlock h6 {
+    margin-top: 0rem;
+}
+.getSupport {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+.active {
+    background-color: #23a6f0;
+    width: 328px;
+    height: 403px;
+    color: white;
+}
+.disabled {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.btnTouch {
+    width: 185px;
+    height: 52px;
+    border-radius: 37px;
+    border: 1px solid #23a6f0;
+    background-color: white;
+}
+.btnTouch h6 {
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+.btnTouch.active {
+    background-color: #23a6f0;
+    border: 1px solid white;
+}
+@media (max-width: 1024px) {
+    .touchInfo {
+        flex-direction: column;
+    }
+    .touchInfoBlock {
+        margin-top: 3rem;
+    }
+}

@@ -1,5 +1,8 @@
 //import firstImg from './img/user.1.png'
 //import secondImg from './img/user.2.png'
+import firstImgTouch from './img/firstImgTouch.png'
+import secondImgTouch from './img/secondImgTouch.png'
+import thirdImgTouch from './img/thirdImgTouch.png'
 
 const obj = {
     navbar: ['Home', 'Product', 'Pricing', 'Contact'],
@@ -135,6 +138,26 @@ const obj = {
                     className: 'disable',
                 },
             ],
+        },
+    ],
+    touchs: [
+        {
+            email1: 'georgiayoung@example.com',
+            email2: 'georgiayoung@ple.com',
+            img: firstImgTouch,
+            className: 'disabled',
+        },
+        {
+            email1: 'georgiayoung@example.com',
+            email2: 'georgiayoung@ple.com',
+            img: secondImgTouch,
+            className: 'active',
+        },
+        {
+            email1: 'georgiayoung@example.com',
+            email2: 'georgiayoung@ple.com',
+            img: thirdImgTouch,
+            className: 'disabled',
         },
     ],
 }
