@@ -160,6 +160,24 @@ const obj = {
             className: 'disabled',
         },
     ],
+    footersInfo: [
+        {
+            title: 'CompanyInfo',
+            links: ['About us', 'Carrier', 'We are hiring', 'Blog'],
+        },
+        {
+            title: 'Legal',
+            links: ['About us', 'Carrier', 'We are hiring', 'Blog'],
+        },
+        {
+            title: 'Features',
+            links: ['About us', 'Carrier', 'We are hiring', 'Blog'],
+        },
+        {
+            title: 'Resourses',
+            links: ['About us', 'Carrier', 'We are hiring', 'Blog'],
+        },
+    ],
 }
 
 export default obj

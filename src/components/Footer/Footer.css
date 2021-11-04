@@ -1,0 +1,90 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    width: 1057px;
+}
+.footerinfo {
+    margin-top: 4rem;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.imageSectionFooter img {
+    margin: 0.5rem;
+}
+hr {
+    width: 1057px;
+    height: 0px;
+    border: 1px solid #e6e6e6;
+}
+.brandText {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+}
+.titleInfo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+    color: #ffffff;
+}
+.linkToCompanyInfo {
+    display: flex;
+    flex-direction: row;
+    width: 1057px;
+    align-items: center;
+}
+.links a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+
+    /* identical to box height, or 171% */
+    text-decoration: none;
+
+    /* light-text-color */
+
+    color: #ffffff;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+.companyInfoBlock {
+    margin-right: 50px;
+}
+.sectionWithAllInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.block {
+}
+
+@media (max-width: 1024px) {
+    .linkToCompanyInfo {
+        width: 100%;
+        flex-direction: column;
+    }
+    .footerinfo {
+        flex-direction: column;
+    }
+    hr {
+        display: none;
+    }
+    .sectionWithAllInfo {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .block {
+        margin-left: 0px;
+    }
+}

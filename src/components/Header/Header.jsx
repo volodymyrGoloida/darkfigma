@@ -7,14 +7,14 @@ import basketlogo from '../../img/2.png'
 import gamburlogo from '../../img/3.png'
 
 function Header() {
-    /*const [width, setWidth] = useState(720)
+    /*const [width, setWidth] = useState(720) // хук для тих хто хоче регулювати ширину і бачити змінини
 
     window.addEventListener('resize', () => {
         let userWidth = document.querySelector('body').offsetWidth
         setWidth(userWidth)
     })*/
 
-    const width = document.querySelector('body').offsetWidth
+    const width = document.querySelector('body').offsetWidth //але юзер зазвичай заходить раз і сидить так,тому в тому хуці нема потребності
 
     const { navbar } = obj
     return (
