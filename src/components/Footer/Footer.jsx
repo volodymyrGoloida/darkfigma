@@ -21,21 +21,25 @@ function Footer() {
             </div>
             <hr />
             <div className="linkToCompanyInfo">
-                <div className="sectionWithAllInfo">
-                    {footersInfo.map(({ title, links }) => {
-                        return (
-                            <div className="block">
-                                <div className="companyInfoBlock">
-                                    <h5 className="titleInfo">{title} </h5>
-                                </div>
-                                <div className="links">
-                                    {links.map((link) => {
-                                        return <a href="#">{link}</a>
-                                    })}
-                                </div>
+                {footersInfo.map(({ title, links }) => {
+                    return (
+                        <div className="blockInfo">
+                            <div className="companyInfoText">
+                                <h5 className="titleInfo">{title} </h5>
                             </div>
-                        )
-                    })}
+                            <div className="links">
+                                {links.map((link) => {
+                                    return <a href="#">{link}</a>
+                                })}
+                            </div>
+                        </div>
+                    )
+                })}
+                <div className="subscribeCompany">
+                    <h5>Get in touch</h5>
+                    <input type="text" placeholder="Your email"></input>
+                    <button>dasd</button>
+                    <p> lorem ipmusum dolor amit</p>
                 </div>
             </div>
         </div>

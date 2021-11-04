@@ -45,6 +45,7 @@ hr {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
+    margin-top: 1rem;
 
     /* identical to box height, or 171% */
     text-decoration: none;
@@ -57,15 +58,12 @@ hr {
     display: flex;
     flex-direction: column;
 }
-.companyInfoBlock {
-    margin-right: 50px;
+
+.blockInfo {
+    margin: 2rem;
 }
-.sectionWithAllInfo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.block {
+.subscribeCompany {
+    margin-left: 10rem;
 }
 
 @media (max-width: 1024px) {
@@ -81,8 +79,6 @@ hr {
     }
     .sectionWithAllInfo {
         flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
     }
     .block {
         margin-left: 0px;
