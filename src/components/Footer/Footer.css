@@ -65,6 +65,53 @@ hr {
 .subscribeCompany {
     margin-left: 10rem;
 }
+.subscribeCompany input {
+}
+.buttonTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+
+    /* light-text-color */
+
+    color: #ffffff;
+}
+input {
+    font-family: 'Montserrat';
+    color: #737373;
+    height: 3rem;
+    width: 10rem;
+    color: white;
+    text-align: center;
+}
+button {
+    background: #23a6f0;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+    height: 55px;
+    width: 117px;
+    left: 0px;
+    top: 0px;
+    color: white;
+    font-family: 'Montserrat';
+}
+.subscribeForm {
+    display: flex;
+    flex-direction: row;
+}
+.buttonInfo {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 28px;
+
+    color: white;
+}
 
 @media (max-width: 1024px) {
     .linkToCompanyInfo {
@@ -82,5 +129,8 @@ hr {
     }
     .block {
         margin-left: 0px;
+    }
+    .subscribeForm {
+        margin-right: 7rem;
     }
 }

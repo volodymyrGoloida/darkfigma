@@ -36,10 +36,12 @@ function Footer() {
                     )
                 })}
                 <div className="subscribeCompany">
-                    <h5>Get in touch</h5>
-                    <input type="text" placeholder="Your email"></input>
-                    <button>dasd</button>
-                    <p> lorem ipmusum dolor amit</p>
+                    <h5 className="buttonTitle">Get in touch</h5>
+                    <div className="subscribeForm">
+                        <input type="text" placeholder="Your email"></input>
+                        <button>Subscribe</button>
+                    </div>
+                    <p className="buttonInfo">Lorem ipsum dolor sit amet </p>
                 </div>
             </div>
         </div>
